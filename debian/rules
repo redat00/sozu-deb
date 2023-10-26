@@ -1,0 +1,8 @@
+#!/usr/bin/make -f
+
+override_dh_auto_install:
+	mkdir -p debian/sozu/usr/bin
+	cp sozu/target/release/sozu debian/sozu/usr/bin/
+
+%:
+	dh $@

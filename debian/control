@@ -1,0 +1,13 @@
+Source: sozu
+Section: web
+Priority: optional
+Maintainer: Renaud Duret <reno@redat.me>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.5.1
+Rules-Requires-Root: no
+Homepage: https://github.com/sozu-proxy/sozu
+
+Package: sozu
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Sozu - A HTTP reverse proxy, configurable at runtime, fast and safe, built in Rust.
